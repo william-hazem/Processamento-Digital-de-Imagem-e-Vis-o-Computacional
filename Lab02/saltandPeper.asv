@@ -1,0 +1,4 @@
+im=imread('lenna.jpg')
+noise= imnoise(I,'salt & pepper',0.02);
+h1 = fspecial('average',hsize);
+h2 = medfilt2 (noise, [3,3]);
